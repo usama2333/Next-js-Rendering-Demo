@@ -1,29 +1,16 @@
-
-// client side first rendered on server side then on client side
-// we can see consoles on web 
 "use client";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import { useTheme } from "@/components/theme-provider";
 
-// import "./ImageSlider.css";
-
-export default function ClientRoutePage() {
+export default function ImageSlider() {
     const settings = {
         dots: true
     }
-//   const theme = useTheme();
   return (
     <>
-      {/* <h1
-        style={{
-          color: theme.colors.secondary,
-        }}
-      >
-        Server Route
-      </h1> */}
+      
       <div className="image-slider-container">
         <Slider {...settings}>
           <div>
