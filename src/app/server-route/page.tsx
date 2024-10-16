@@ -1,10 +1,14 @@
 import ImageSlider from "@/components/ImageSlider";
 import { serverSideFunction } from "@/utils/server-utils"
 import ClientRoutePage from "../client-route/page";
+// import { clientSideFunction } from "@/utils/client-utils";
+
 // we are not seeing any consoles on web bcz it is server component
 export default function ServerRoutePage() {
     console.log('Server route render')
     const result = serverSideFunction();
+    // importing client-only code in server gives error
+    // const clientResult = clientSideFunction()
     return(
         <div>
             <h1>Server Route Page</h1>
